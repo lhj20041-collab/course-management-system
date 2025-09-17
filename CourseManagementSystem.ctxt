@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=CourseManagementSystem
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment10.params=
+comment10.target=void\ listCourses()
+comment11.params=
+comment11.target=void\ showMenu()
+comment2.params=
+comment2.target=void\ loadUsers()
+comment3.params=
+comment3.target=void\ loadCourses()
+comment4.params=
+comment4.target=boolean\ login()
+comment5.params=
+comment5.target=void\ saveCourses()
+comment6.params=
+comment6.target=void\ addCourse()
+comment7.params=
+comment7.target=void\ deleteCourse()
+comment8.params=
+comment8.target=void\ searchCourse()
+comment9.params=
+comment9.target=void\ updateCourse()
+numComments=12
