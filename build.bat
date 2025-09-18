@@ -1,31 +1,24 @@
 @echo off
-echo Building Course Management System (C++)...
+echo Building Course Management System JAR...
 
-:: Check if g++ compiler is available
-g++ --version >nul 2>&1
-if %errorlevel% neq 0 (
-    echo Error: g++ compiler not found!
-    echo Please install MinGW or add it to your PATH.
-    pause
-    exit /b 1
+if not exist manifest.txt (
+    echo Creating manifest file...
+    echo Main-Class: CMS > manifest.txt
 )
 
-:: Compile the C++ program
-echo Compiling main.cpp...
-g++ -std=c++11 -O2 -o cms_cpp.exe main.cpp
+echo Building JAR file...
+jar cfm cms_java.jar manifest.txt *.class
 
-:: Check if compilation was successful
-if %errorlevel% equ 0 (
-    echo Compilation successful!
+if exist "cms_java.jar" (
+    echo Build successful!
     echo.
-    echo To run the program:
-    echo   cms_cpp.exe
-    echo.
-    echo Running the program now...
-    echo ========================================
-    cms_cpp.exe
+    echo To run the application:
+    echo 1. Double-click cms_java.jar, OR
+    echo 2. Run: java -jar cms_java.jar
 ) else (
-    echo Compilation failed! Please check your code for errors.
+    echo Build failed! Make sure:
+    echo 1. You've compiled your Java code in BlueJ
+    echo 2. The CMS.class file exists in this folder
 )
 
 pause
