@@ -6,7 +6,7 @@
 | Name | Student ID | Role |
 |------|------------|------|
 | Handsome Banda | 2410018 | Authentication & File I/O Lead |
-| Felix Mwangi | 2410155 | Course CRUD & Array Management Lead |
+| Felix Mwango | 2410155 | Course CRUD & Array Management Lead |
 | Samson Mumba | 2410544 | Search/Update & Java Lead |
 
 ### Project Description
